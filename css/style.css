@@ -1,1 +1,137 @@
-/* code here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: #e63946;
+}
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+nav a:hover {
+  color: #e63946;
+}
+
+.banner {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/banner.jpg') center/cover;
+  /* ../ = keluar dari folder css, baru masuk images */
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+.banner h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.btn-beli {
+  background: #e63946;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn-beli:hover {
+  background: #d62828;
+  transform: scale(1.05);
+}
+
+.judul-section {
+  text-align: center;
+  margin: 40px 0 20px 0;
+  font-size: 28px;
+}
+.grid-produk {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.card-produk {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: 0.3s;
+}
+.card-produk:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+.card-produk img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.info-produk {
+  padding: 15px;
+  text-align: center;
+}
+.harga {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e63946;
+  margin: 8px 0;
+}
+.harga span {
+  font-size: 14px;
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+.btn-keranjang {
+  background: #333;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.btn-keranjang:hover {
+  background: #e63946;
+}
+
+footer {
+  background: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 20px;
+}
